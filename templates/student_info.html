@@ -10,7 +10,7 @@
     <ul>
         <lh><b>Project Title: Grade</b></lh>
         {% for row in projects_grades %}
-            <li>{{ row[0] }} : {{ row[1] }}</li>
+            <li><a href="/project?title={{ row[0] }}">{{ row[0] }}</a> : {{ row[1] }}</li>
         {% endfor %}
     </ul>
 
